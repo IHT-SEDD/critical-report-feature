@@ -1,0 +1,10 @@
+
+    'critical' => [
+        'title' => 'Critical Report',
+        'data_service' => \Lica\CriticalReport\Services\Reports\CriticalReport\CriticalReportDataService::class,
+        'export_class' => \Lica\CriticalReport\Exports\Reports\CriticalExport::class,
+        'view_index' => 'dashboard.report.report_critical.index',
+        'view_print' => 'dashboard.report.report_critical.print',
+        'view_excel' => 'dashboard.report.report_critical.excel',
+        'filter_label' => \App\Group::class,
+    ],

@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Lica\CriticalReport\Http\Controllers\Concerns\HandlesCriticalReport;
+
+class ReportController extends Controller
+{
+    use HandlesCriticalReport;
+
+    // Method report lain (selain critical) bisa ditambahkan di sini,
+    // masing-masing biasanya cukup 4 baris yang memanggil GlobalReportActionService,
+    // persis seperti pola yang dipakai oleh trait HandlesCriticalReport.
+}
